@@ -1,6 +1,9 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:news_tre/screen/HomePage.dart';
+import 'package:news_tre/screen/RegistrationPage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -12,7 +15,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   var phoneController = TextEditingController();
   var passwordController = TextEditingController();
-  bool _validate = false;
+  final bool _validate = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,13 +53,6 @@ class _LoginPageState extends State<LoginPage> {
                             fontSize: 35,
                             fontWeight: FontWeight.bold),
                       ),
-                      Text(
-                        "Sign in to your Account",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 13,
-                            fontWeight: FontWeight.normal),
-                      )
                     ],
                   ),
                 )),
@@ -122,7 +118,12 @@ class _LoginPageState extends State<LoginPage> {
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(15.0))),
               color: Colors.black,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                    (route) => false);
+              },
               child: const Row(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -181,7 +182,13 @@ class _LoginPageState extends State<LoginPage> {
                     style: TextStyle(fontSize: 15),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Register()),
+                      );
+                    },
                     child: const Text(
                       "Register",
                       style: TextStyle(

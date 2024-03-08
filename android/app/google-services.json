@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "533815630229",
+    "project_id": "newstre-fdffb",
+    "storage_bucket": "newstre-fdffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533815630229:android:b9061e2b58effee96e3e9c",
+        "android_client_info": {
+          "package_name": "com.example.news_tre"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcFELoVYF9rlvFX9QrW03MJcb1-oWrIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

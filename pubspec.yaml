@@ -11,7 +11,14 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^8.1.4
   fluttertoast: ^8.2.4
-  http: ^1.2.1
+  http: ^1.2.0
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.8.2
+  firebase_auth: ^4.17.7
+  firebase_storage: ^11.2.4
+  carousel_slider: ^4.2.1
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
